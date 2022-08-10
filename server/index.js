@@ -13,7 +13,7 @@ const io = new Server(server, {
 const PORT = 8000;
 
 io.on('connection', (socket) => {
-  console.log('クライアントと接続しました');
+  console.log('connection is successful');
 
   socket.on('send_message', (data) => {
     console.log(data);
